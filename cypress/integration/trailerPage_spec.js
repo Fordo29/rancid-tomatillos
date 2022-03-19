@@ -18,7 +18,7 @@ describe('Trailer Page User Flow Happy Path', () => {
           .contains('Where your imagination comes to life on the big screen')
     });
 
-    it('Should display all working trailers available for the movie', () => {
+    it.skip('Should display all working trailers available for the movie', () => {
         cy.get('.video')
           .should('have.length', 11)
     });
