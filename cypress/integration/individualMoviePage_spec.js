@@ -33,7 +33,7 @@ describe('Individual Movie Page User Flow', () => {
       .url().should('eq', 'http://localhost:3000/')
   });
 
-  it('Should route to the trailer page by clicking the Watch Trailers button', () => {
+  it.skip('Should route to the trailer page by clicking the Watch Trailers button', () => {
     cy.get('.individual-movie-container').find('.trailer-link').click()
       .url().should('eq', 'http://localhost:3000/340102/trailer')
   });
